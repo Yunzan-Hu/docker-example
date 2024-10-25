@@ -23,11 +23,7 @@ spec:
         io.kompose.service: result
     spec:
       containers:
-        - command:
-            - nodemon
-            - --inspect=0.0.0.0
-            - server.js
-          image: dockersamples/examplevotingapp_result
+        - image: dockersamples/examplevotingapp_result
           name: result
           ports:
             - containerPort: 80

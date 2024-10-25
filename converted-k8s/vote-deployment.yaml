@@ -24,16 +24,6 @@ spec:
     spec:
       containers:
         - image: dockersamples/examplevotingapp_vote
-          livenessProbe:
-            exec:
-              command:
-                - curl
-                - -f
-                - http://localhost
-            failureThreshold: 3
-            initialDelaySeconds: 10
-            periodSeconds: 15
-            timeoutSeconds: 5
           name: vote
           ports:
             - containerPort: 80
