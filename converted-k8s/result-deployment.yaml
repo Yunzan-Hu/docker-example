@@ -27,7 +27,7 @@ spec:
             - nodemon
             - --inspect=0.0.0.0
             - server.js
-          image: 192.168.157.11/vote.app/result:v2
+          image: dockersamples/examplevotingapp_result
           name: result
           ports:
             - containerPort: 80
