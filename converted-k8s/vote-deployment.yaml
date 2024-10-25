@@ -23,7 +23,7 @@ spec:
         io.kompose.service: vote
     spec:
       containers:
-        - image: 192.168.157.13:32498/docker-example/vote:v1
+        - image: 192.168.157.11/vote.app/vote:v1
           livenessProbe:
             exec:
               command:
